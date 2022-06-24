@@ -19,9 +19,9 @@ const hasMutation= (dnaObject) => {
         let allowedLetters = ['A', 'T', 'C', 'G'];
 
         //To compare subarrays lenght
+        let dnaObjectLength =  dnaObject.dna.length;
         let subArrayVerifier =  dnaObject.dna[0].length;
-        let dnaObjectLength = dnaObject.dna.length;
-
+        
         //Transform object to array
         let dnaArray = [];
         
@@ -48,7 +48,7 @@ const hasMutation= (dnaObject) => {
             }
             dnaArray.push(subArray);
         }
-
+        
         if(allowedDNA){
             let count = 0;
             const findPattern = (dnaArray) => {

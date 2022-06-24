@@ -6,7 +6,7 @@ class Controller {
 
     async mutantVerifier(req, res){
         const general = req.body;
-          
+
         let result = hasMutation(general); 
 
         if(result){
