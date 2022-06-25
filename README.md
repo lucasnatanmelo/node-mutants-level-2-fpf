@@ -34,7 +34,7 @@
   * **DNA TYPE NOT ALLOWED:**<br />
     * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
     * **Code:** 401 UNAUTHORIZED <br />
-    * **Content:** <br/> `{ error : "DNA type not allowed." }`<br />
+    * **Return:** <br/> `{ error : "DNA type not allowed." }`<br />
 
 <br/>
 
