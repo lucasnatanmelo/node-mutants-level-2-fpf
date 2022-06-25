@@ -1,5 +1,3 @@
-Link: 
-
 **node-mutants-level-2-fpf**
 ----
   API to returns information about a data DNA sent.
