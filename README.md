@@ -1,15 +1,11 @@
-**node-mutants-level-2-fpf**
+**DNA VERIFIER - HUMAN OR MUTANT - API**
 ----
-  API to returns information about a data DNA sent.
+  **API to verifiy if data sent is a human or mutant DNA** <br/>
+  *node-mutants-level-2-fpf*
 
-* **URL**
+<strong>POST: <STRONG> `https://node-mutants-level-2-fpf.herokuapp.com/mutants` (To verify DNA)
 
-  **https://node-mutants-level-2-fpf.herokuapp.com/mutants**
 
-* **Method:**
-
-  **`POST`**
-  
 *  **URL Params**
 
    **None**
@@ -18,7 +14,7 @@
   `Text - JSON`
 
 
-* **Types Responsesand Requests**  
+* **Types Responses and Requests**  
 
   * **MUTANT DNA**<br />
   
@@ -31,12 +27,12 @@
   * **HUMAN DNA**<br />
 
      * **Code:** <br/>403-FORBIDDEN <br />
-     * **Input Data Params example:** <br/>`{"dna": ["ACACGA", "CCGTGA", "CCGTAA", "TGACCA", "TGACCT", "TCACTG"]}` <br />
+     * **Input Data Params example:** <br/>`{"dna": ["ACACGA","CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
      * **Return:** <br/> `false` <br />
     
     <br />
   * **DNA TYPE NOT ALLOWED**<br />
-
+  * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
   * **Code:** 401 UNAUTHORIZED <br />
     * **Content:** <br/> `{ error : "DNA type not allowed." }`<br />
 
