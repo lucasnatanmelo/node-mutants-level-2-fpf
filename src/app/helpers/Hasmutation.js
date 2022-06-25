@@ -5,13 +5,13 @@ const hasMutation= (dnaObject) => {
     //Checks length of dnaObject
     if(Object.keys(dnaObject).length != 1){
         validJson = false;
-        return {error : "Invalid JSON dna type in object length"} ;
+        return { error : "DNA type not allowed." };
     };
 
     //Checks names of dnaObect propetry
     if(!dnaObject.hasOwnProperty('dna')){
         validJson = false;
-        return {error : "Invalid JSON dna type - Only 'dna' allowed"}
+        return { error : "DNA type not allowed." };
     };
 
     if(validJson){
@@ -30,21 +30,21 @@ const hasMutation= (dnaObject) => {
             //Checks if each item of JSON is a strig
             if((typeof dnaObject.dna[i] != 'string')){
                 allowedDNA = false;
-                return {error : "Invalid JSON dna type on values types"}
+                return { error : "DNA type not allowed." }
             }
 
             for(j in dnaObject.dna[i]){
                 //Checks if each letter is valid on dna type
                 if(!allowedLetters.includes(dnaObject.dna[i][j])){
                     allowedDNA = false;
-                    return {error : "Invalid JSON dna on allowed letters"}
+                    return { error : "DNA type not allowed." }
                 }
                 subArray.push(dnaObject.dna[i][j]);
             }
             //Check if dna is a square matrix
             if((subArray.length != subArrayVerifier)||(subArray.length != dnaObjectLength)){
                 allowedDNA = false;
-                return {error : "Invalid JSON dna on substring length that must be equal"}
+                return { error : "DNA type not allowed." }
             }
             dnaArray.push(subArray);
         }
