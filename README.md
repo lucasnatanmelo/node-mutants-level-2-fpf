@@ -36,14 +36,10 @@
     * **Code response:** 401 UNAUTHORIZED <br />
     * **Return:** <br/> `{ error : "DNA type not allowed." }`<br />
 
-<br/>
-
 * **API - TECH ESPECIFICATIONS** 
 
   * **NODEJS + Express** <br />
   * **HEROKU on cloud computing environment** <br />
-
-
 
 * **INSTALL**
 
