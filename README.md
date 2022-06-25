@@ -1,9 +1,9 @@
 **DNA VERIFIER - HUMAN OR MUTANT - API**
 ----
-  **API to verifiy if data sent is a human or mutant DNA** <br/>
+  **API to verify if data sent is a human or mutant DNA** <br/>
   *node-mutants-level-2-fpf*
 
-<strong>POST: <STRONG> `https://node-mutants-level-2-fpf.herokuapp.com/mutants` (To verify DNA)
+<strong>POST: <STRONG> `https://node-mutants-level-2-fpf.herokuapp.com/mutants`
 
 
 *  **URL Params**
@@ -23,17 +23,17 @@
      `{"dna": ["ACACGA", "CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
     * **Return:** <br/> `true` <br />
     
-    <br/>
+    
   * **HUMAN DNA**<br />
 
      * **Code:** <br/>403-FORBIDDEN <br />
      * **Input Data Params example:** <br/>`{"dna": ["ACACGA","CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
      * **Return:** <br/> `false` <br />
     
-    <br />
+    
   * **DNA TYPE NOT ALLOWED**<br />
-  * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
-  * **Code:** 401 UNAUTHORIZED <br />
+    * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
+    * **Code:** 401 UNAUTHORIZED <br />
     * **Content:** <br/> `{ error : "DNA type not allowed." }`<br />
 
 <br/>
@@ -43,7 +43,7 @@
   * **NODEJS + Express** <br />
   * **HEROKU on cloud computing environment** <br />
 
-<br/>
+
 
 * **INSTALL**
 
