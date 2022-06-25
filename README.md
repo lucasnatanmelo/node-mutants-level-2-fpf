@@ -1,4 +1,4 @@
-**DNA VERIFIER - HUMAN OR MUTANT - API**
+**<strong>DNA VERIFIER - HUMAN OR MUTANT - API<strong>**
 ----
   **API to verify if data sent is a human or mutant DNA** <br/>
   *node-mutants-level-2-fpf*
@@ -14,9 +14,9 @@
   `Text - JSON`
 
 
-* **Types Responses and Requests**  
+* **TYPES OF RESQUESTS AND RESPONSES:**  
 
-  * **MUTANT DNA**<br />
+  * **MUTANT DNA:**<br />
   
     * **Code respoonse:** <br/>200-OK <br />
     * **Input Data Params example:** <br /> 
@@ -24,14 +24,14 @@
     * **Return:** <br/> `true` <br />
     
     
-  * **HUMAN DNA**<br />
+  * **HUMAN DNA:**<br />
 
      * **Code:** <br/>403-FORBIDDEN <br />
      * **Input Data Params example:** <br/>`{"dna": ["ACACGA","CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
      * **Return:** <br/> `false` <br />
     
     
-  * **DNA TYPE NOT ALLOWED**<br />
+  * **DNA TYPE NOT ALLOWED:**<br />
     * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
     * **Code:** 401 UNAUTHORIZED <br />
     * **Content:** <br/> `{ error : "DNA type not allowed." }`<br />
