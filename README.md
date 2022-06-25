@@ -38,7 +38,7 @@
 
 <br/>
 
-* **API - Tech Especifications** 
+* **API - TECH ESPECIFICATIONS** 
 
   * **NODEJS + Express** <br />
   * **HEROKU on cloud computing environment** <br />
