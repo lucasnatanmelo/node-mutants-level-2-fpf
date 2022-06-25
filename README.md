@@ -18,7 +18,7 @@
 
   * **MUTANT DNA:**<br />
   
-    * **Code respoonse:** <br/>200-OK <br />
+    * **Code response:** <br/>200-OK <br />
     * **Input Data Params example:** <br /> 
      `{"dna": ["ACACGA", "CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
     * **Return:** <br/> `true` <br />
@@ -26,14 +26,14 @@
     
   * **HUMAN DNA:**<br />
 
-     * **Code:** <br/>403-FORBIDDEN <br />
+     * **Code response:** <br/>403-FORBIDDEN <br />
      * **Input Data Params example:** <br/>`{"dna": ["ACACGA","CAGTGA", "CCATAA", "TGAACA", "TGACCT", "TCACTG"]}` <br />
      * **Return:** <br/> `false` <br />
     
     
   * **DNA TYPE NOT ALLOWED:**<br />
     * **Input Data Params example:** <br/>`{"dna": ["ACxCyA","CAGTGA", "CCA", "2523", true, "TCACTG"]}` <br />
-    * **Code:** 401 UNAUTHORIZED <br />
+    * **Code response:** 401 UNAUTHORIZED <br />
     * **Return:** <br/> `{ error : "DNA type not allowed." }`<br />
 
 <br/>
